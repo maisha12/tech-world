@@ -250,62 +250,80 @@
 
 
     <!-- question -->
-    <section class="container text-center">
-        <h1>
-            Frequently Asked Questions
-        </h1>
-        <p>
-            It is a long established fact that a reader will be distracted by the readable <br>
-            content of a page when looking at its layout.
-        </p>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle fw-bold px-5 mb-5 mt-5" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                What is the difference between flex and Grid ?
-            </button>
-            <ul class="dropdown-menu w-50 text-center">
-                <p>Major Uniqueness between Flexbox and Grids is that the former works on content while the latter is
-                    based on the layout. The Flexbox layout is best suited to application components and small-scale
-                    layouts, while the Grid layout is designed for larger-scale layouts that are not linear in design.
-                </p>
-            </ul>
+
+    <section class="container">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Frequently Asked Questions</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable <br>
+                content of a page when looking at its layout.</p>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle fw-bold px-5 mb-5 mt-5  w-50" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                What is the difference between bootstrap and tailwind ?
-            </button>
-            <ul class="dropdown-menu w-50 text-center">
-                <p>The main difference between Bootstrap and Tailwind is that Bootstrap pre-built components that
-                    provide a responsive UI (user interface) kit. On the other hand, Tailwind comes with predesigned
-                    widgets that facilitate web developers to design a website from scratch. Both Bootstrap and Tailwind
-                    are two of the best front-end CSS framework used worldwide.
-                </p>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle fw-bold px-5 mb-5 mt-5" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                What is the difference between flex and Grid ?
-            </button>
-            <ul class="dropdown-menu w-50 text-center">
-                <p>Major Uniqueness between Flexbox and Grids is that the former works on content while the latter is
-                    based on the layout. The Flexbox layout is best suited to application components and small-scale
-                    layouts, while the Grid layout is designed for larger-scale layouts that are not linear in design.
-                </p>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle fw-bold px-5 mb-5 mt-5" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                What is the difference between flex and Grid ?
-            </button>
-            <ul class="dropdown-menu w-50 text-center">
-                <p>Major Uniqueness between Flexbox and Grids is that the former works on content while the latter is
-                    based on the layout. The Flexbox layout is best suited to application components and small-scale
-                    layouts, while the Grid layout is designed for larger-scale layouts that are not linear in design.
-                </p>
-            </ul>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5> What are the difference between flex and grid?</h5>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Major Uniqueness between Flexbox and Grids is that the former works on content while the
+                            latter is based on the layout. The Flexbox layout is best suited to application components
+                            and small-scale layouts, while the Grid layout is designed for larger-scale layouts that are
+                            not linear in design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5>What is the difference between Bootstrap and Tailwind?</h5>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Bootstrap requires four main files to be incorporated in the project for development which
+                            requires heavy space to be occupied about 300 kb. One the other hand,
+                            In Tailwind CSS, we need style sheets to get our task done. This CSS file occupies about
+                            30kb of the space.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5>What is the CSS box model?</h5>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p> The CSS box model as a whole applies to block boxes and defines how the different parts of a
+                            box — margin, border, padding, and content — work together to create a box that you can see
+                            on a page. Inline boxes use just some of the behavior defined in the box model.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5>What is semantic tag?</h5>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Basically Semantic tags are those tags which clearly defines its content. In other terms
+                            semantic tags are those tags whose name can easily let you know which type of content take
+                            place in it.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
